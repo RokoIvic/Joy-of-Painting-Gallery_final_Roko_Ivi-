@@ -1,0 +1,26 @@
+.season-select{
+    margin: 20px;
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.season-select label{
+    font-size: 20px;
+}
+
+.season-select select{
+    background-color: rgba(143, 142, 142, 0.1);
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.season-select select option{
+    background-color: rgba(18, 18, 18, 0.9);
+    color: white;
+}

@@ -1,0 +1,30 @@
+main {
+    margin-bottom: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.nav-button-previous, .nav-button-next {
+    margin: 20px;
+    margin-top: 0px;
+    display: block;
+    border: none;
+    outline: none;
+    background-color: rgba(143, 142, 142, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    padding-top: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.nav-button-previous:hover, .nav-button-next:hover {
+    color: #F63223;
+    background-color: #555;
+}
