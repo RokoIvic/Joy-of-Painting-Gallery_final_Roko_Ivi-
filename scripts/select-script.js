@@ -4,19 +4,13 @@ if (select) {
 
     const pathname = window.location.pathname;
 
-    let firstDigit = pathname[21];
-    let secondDigit = pathname[22];
+    const match = pathname.match(/season(\d+)/i);
 
-    if(!isNaN(Number(secondDigit))) {
-        select.value = firstDigit * 10 + secondDigit * 1;
-    }
-    else {
-        select.value = firstDigit;
+    if (match) {
+        select.value = match[1];
     }
 
     select.addEventListener('change', function () {
         window.location.href = '../seasons/season' + this.value + '.html';
     });
 }
-
- 
